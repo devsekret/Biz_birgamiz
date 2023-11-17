@@ -9,3 +9,19 @@ elButton.addEventListener ("click", ()=> {
     elNavList.classList.toggle("nav__blok")
 }
 )
+
+
+
+
+// Modal 
+
+
+var elMadal = document.querySelector(".hero__madol")
+var elButtonMadal = document.querySelector(".hero__btn") 
+
+
+elButtonMadal.addEventListener("click", ()=> {
+    elMadal.classList.toggle("blok")
+    
+    console.log(ii);
+})

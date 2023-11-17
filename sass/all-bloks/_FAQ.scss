@@ -1,0 +1,631 @@
+.hero__body {
+    background-color: #F9F9F9;
+}
+
+.hero {
+    max-width: 1350px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 90px;
+    padding-left: 20px;
+}
+
+.hero__info {
+    padding-top: 95px;
+}
+
+.hero__title {
+    color: #333;
+    font-family: "Futura PT";
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 64px;
+    padding-bottom: 27px;
+}
+
+.hero__text {
+    max-width: 447px;
+    width: 100%;
+    color: #949494;
+    font-family: "Futura PT";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    padding-bottom: 35px;
+
+}
+
+.hero__btn {
+    width: 201px;
+    height: 50px;
+    flex-shrink: 0;
+    border-radius: 3px;
+    background: #78C0DE;
+    color: #FFF;
+    font-family: "Futura PT";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    border: none;
+
+
+    &:hover {
+        background-color: #21D4FD;
+        background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
+        transition: all 3s ease;
+        box-shadow: 0px 1px 1px 0px rgba(0, 255, 255, 0.7),
+            1px 1px 4px 0px rgba(0, 255, 255, 0.7),
+            2px 1px 8px 0px rgba(0, 255, 255, 0.7),
+            2px 1px 16px 0px rgba(0, 255, 255, 0.7);
+    }
+}
+
+.hero__icon {
+    margin-bottom: 3px;
+}
+
+.hero__span {
+    padding-right: 6px;
+}
+
+.hero__pic {
+    text-align: center;
+}
+
+.hero__img--second {
+    display: none;
+}
+
+
+
+@media only screen and (max-width: 1000px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 0;
+        align-items: center;
+    }
+
+    .hero__img--second {
+        display: block;
+        order: -2;
+    }
+
+    .hero__img {
+        display: none;
+    }
+
+    .hero__info {
+        order: 2;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    .hero__img--second {
+        width: 300px;
+        height: 380px;
+    }
+
+    .hero__title {
+        font-size: 55px;
+    }
+
+    .hero__text {
+        font-size: 14px;
+
+    }
+
+    .hero__btn {
+        width: 180px;
+        height: 40px;
+        flex-shrink: 0;
+        border-radius: 3px;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        border: none;
+    }
+
+    
+}
+
+
+
+// Modal
+
+.hero__madol {
+    max-width: 850px;
+    width: 100%;
+    height: 648px;
+    flex-shrink: 0;
+    background: #FFBD54;
+    display: none;
+    position: absolute;
+    z-index: 100;
+    padding-top: 21px;
+    padding-left: 20px;
+    padding-right: 51px;
+    margin-top: 40px;
+
+
+}
+
+.modal__flex {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 51px;
+}
+
+.modal__title {
+    color: #333;
+    font-family: "Futura PT";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+    padding-top: 110px;
+
+}
+
+
+.modal__link {
+    width: 238px;
+    height: 50px;
+    background: #FFF;
+    color: #333;
+    font-family: "Futura PT";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-align: center;
+    padding-top: 14px;
+    margin-top: 21px;
+}
+
+.modal__icon {
+    margin-right: 13px;
+    transform: translateY(-1px);
+}
+
+.modal__heading {
+    color: #333;
+    font-family: "Futura PT";
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 54px;
+    margin-top: 83px;
+}
+
+.modal__name {
+    width: 335px;
+    height: 50px;
+    background: #FFF;
+    color: #949494;
+    font-family: "Futura PT";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-left: 22px;
+    border: none;
+    margin-top: 25px;
+    margin-bottom: 21px;
+}
+
+.modal__textarea {
+    width: 335px;
+    height: 165px;
+    background: #FFF;
+    border: none;
+    color: #949494;
+    font-family: "Futura PT";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-left: 22px;
+    padding-top: 17px;
+    margin-bottom: 27px;
+}
+
+.btn__modal {
+    width: 193px;
+    height: 50px;
+    background: #000;
+    color: #FFF;
+    font-family: "Futura PT";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.modal__img {
+    transform: translateX(-40px);
+}
+
+.modal__name {
+    display: block;
+}
+
+.modal__textarea {
+    display: block;
+}
+
+.blok {
+    display: block;
+}
+
+@media only screen and (max-width: 1000px) {
+    .hero__madol {
+        position: relative;
+        text-align: center;
+        padding-left: 10px;
+        padding-right: 10px;
+        height: 1123px;
+
+    }
+
+    .modal__flex {
+        flex-direction: column;
+        text-align: center;
+
+    }
+
+
+    .modal__div {
+        order: 2;
+
+    }
+
+    .modal__question {
+        order: -2;
+
+
+    }
+
+    .modal__img {
+        transform: translateX(-30px);
+    }
+
+    .modal__title {
+        transform: translateX(-28px);
+    }
+
+    .modal__img {
+        margin-left: 15px;
+    }
+
+    .link {
+        margin-left: 35px;
+    }
+
+    .modal__question {
+        margin-right: 50px;
+    }
+
+
+}
+// Our
+
+.our {
+    max-width: 1350px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    margin: 0 auto;
+    bottom: 120px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.our__info {
+    border-radius: 5px;
+    border: 1px solid #F3F3F3;
+    background: #FFF;
+    padding-top: 31px;
+    padding-bottom: 75px;
+    padding-left: 63px;
+    padding-right: 41px;
+}
+
+.our__span {
+    color: #333;
+    font-family: "Futura PT";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    padding-left: 7px;
+}
+
+.our__span--second {
+    color: #78C0DE;
+    text-align: right;
+    font-family: "Futura PT";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0.96px;
+    text-transform: uppercase;
+    padding-left: 28px;
+}
+
+
+.our__title {
+    color: #333;
+    font-family: "Futura PT";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px;
+    padding-bottom: 23px;
+}
+
+.our__text {
+    max-width: 577px;
+    width: 100%;
+    color: #949494;
+    font-family: "Futura PT";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.our__flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.our__info--second {
+    border-radius: 5px;
+    border: 1px solid #F3F3F3;
+    background: #FFF;
+    padding-left: 63px;
+    padding-right: 41px;
+    padding-top: 29px;
+    padding-bottom: 32px;
+    margin-top: 18px;
+}
+
+.our__title--second {
+    max-width: 539px;
+    width: 100%;
+    color: #333;
+    font-family: "Futura PT";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px;
+}
+
+
+.our__info--disabled {
+    border-radius: 5px;
+    border: 1px solid #F3F3F3;
+    background: #FFF;
+    padding-left: 63px;
+    padding-right: 41px;
+    padding-top: 29px;
+    padding-bottom: 32px;
+    opacity: 0.5;
+    margin-top: 18px;
+
+}
+
+.our__info--three {
+    border-radius: 5px;
+    border: 1px solid #F3F3F3;
+    background: #FFF;
+    padding-left: 63px;
+    padding-right: 41px;
+    padding-top: 29px;
+    padding-bottom: 44px;
+    margin-top: 18px;
+
+}
+
+
+.our__info--dis {
+    border-radius: 5px;
+    border: 1px solid #F3F3F3;
+    background: #FFF;
+    padding-left: 63px;
+    padding-right: 41px;
+    padding-top: 29px;
+    padding-bottom: 44px;
+    opacity: 0.5;
+    margin-top: 18px;
+
+}
+
+
+
+.our__icon {
+    margin-left: 10px;
+}
+
+.our__qush {
+    transform: translateY(280px);
+}
+
+
+
+.our__iconlar {
+    transform: translateX(7px);
+}
+
+@media only screen and (max-width: 1260px) {
+    .our {
+        flex-direction: column;
+        bottom: 0;
+        align-items: center;
+        padding-right: 20px;
+    }
+
+
+    .our__flex--first {
+        orphans: 1;
+    }
+
+    .our__bird {
+        order: -2;
+        margin: 0;
+    }
+
+    .our__soya {
+        display: none;
+    }
+
+    .our__qush {
+        margin-right: 120px;
+        width: 480px;
+        height: 530px;
+        transform: translateY(0px);
+    }
+}
+
+@media only screen and (max-width: 810px) {
+    .our__qush {
+        margin-right: 130px;
+        width: 450px;
+        height: 500px;
+    }
+
+}
+
+@media only screen and (max-width: 620px) {
+    .our__title {
+        font-size: 15px;
+    }
+
+    .our__text {
+        font-size: 15px;
+    }
+
+    .our__title--second {
+        font-size: 15px;
+    }
+
+    .our__span--second {
+        font-size: 10px;
+    }
+
+    .our__qush {
+        width: 350px;
+        height: 400px;
+        margin-right: 100px;
+    }
+}
+
+
+@media only screen and (max-width: 500px) {
+    .our__qush {
+        width: 280px;
+        height: 320px;
+        margin-right: 80px;
+    }
+}
+
+@media only screen and (max-width: 430px) {
+    .our__span--second {
+        display: block;
+        text-align: left;
+        transform: translateX(-27px);
+    }
+
+    .our {
+        align-items: center;
+        padding-right: 20px;
+    }
+
+    .our__info {
+        padding-left: 20px;
+        padding-right: 35px;
+    }
+
+    .our__info--second {
+        padding-left: 20px;
+        padding-right: 35px;
+    }
+
+
+    .our__info--disabled {
+        padding-left: 20px;
+        padding-right: 35px;
+    }
+
+    .our__info--three {
+        padding-left: 20px;
+        padding-right: 35px;
+    }
+
+    .our__info--dis {
+        padding-left: 20px;
+        padding-right: 35px;
+    }
+
+
+}
+
+@media only screen and (max-width: 380px) {
+    .our__qush {
+        margin-right: 130px;
+        width: 280px;
+        height: 320px;
+        margin-left: 25px;
+        margin: 0;
+
+    }
+
+    .our__bird {
+        transform: translateX(-30px);
+    }
+}
+
+.footer__faq {
+    border: 1px solid #EBEBEB;
+    background: #F3F3F3;
+    margin-top: 147px;
+    padding: 60px 0;
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        align-items: start;
+        justify-content: space-between;
+    }
+}
+
+@media only screen and (max-width: 1260px) {
+    .footer__faq {
+        margin-top: 100px;
+    }
+}
+
+
+@media only screen and (max-width: 920px) {
+    .footer__faq .container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .footer__faq .container {
+        grid-template-columns: repeat(1, 1fr);
+        // text-align: center;
+        // align-items: center;
+    }
+}
